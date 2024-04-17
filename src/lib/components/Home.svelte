@@ -1,12 +1,12 @@
 <script>
 export let data;
-(console.log(data));
+console.log (data)
 </script>
 
 <body>
 	<img class="novi-pic" src="src/assets/Novi.jpg" alt="novi-pic" />
 
-    <!-- <h2>{@html data.abouts.aboutInfo.html}</h2> -->
+    <!-- <h2>{data.abouts.aboutInfo}</h2> -->
 
 	<h2>
 		i get nervous.<br /><br />

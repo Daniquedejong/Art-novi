@@ -1,13 +1,11 @@
-const HYGRAPH_KEY =
-    'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImdjbXMtbWFpbi1wcm9kdWN0aW9uIn0.eyJ2ZXJzaW9uIjozLCJpYXQiOjE3MDk0OTY0MTYsImF1ZCI6WyJodHRwczovL2FwaS1ldS13ZXN0LTIuaHlncmFwaC5jb20vdjIvY2x0Ynd2aHVjMzFncjA3dXRiNXlnbWw3dy9tYXN0ZXIiLCJtYW5hZ2VtZW50LW5leHQuZ3JhcGhjbXMuY29tIl0sImlzcyI6Imh0dHBzOi8vbWFuYWdlbWVudC1ldS13ZXN0LTIuaHlncmFwaC5jb20vIiwic3ViIjoiNjlhYjlkNmItNjVlNi00ZDhjLWFhNDMtYTc1Y2JlZDkyZmRmIiwianRpIjoiY2x0YnkxMHdib21yMDA2bWZnbDhpYW50eiJ9.URrx5maocu0gDsDWtHDqIzN4VZMA38TjDaXuXeWJoc-MTj3qhMaECRhc8oZpyvTYfgKM73xswN7pIs53tCCENP6t1dxbGkSQLpnR5YhImrfJvJvzBZ_wJobVq8BY2loa_BDsqgHWdcwaSOr_fz08qsfRALN3hS1th-VPOy09fHMrFCc6wRcA__7jBM4ZOuAW1Iy_DfseEnzdwxdkdIBtjE4rj3eHJcK0VfIknW60d-kAIwrvKGMQcjYo9MBWNmRiSZDsA7OJjZDu7Li7_fzMZ0lkG0h3rCoB803ZWQcG68xLHMG4pqJaooYaOlPxhy0p9MW_sZGFFkaPoXr8DmBV1CEpdwWx1fopbmTziSFtDgl6o8def0cp0b8iQCN3l1ou6x52F6o2dpi6_35K0EQtwWkpvgH1SrJ7jcARCmMcpTdU88oWB9bFZjUZyclTqlc4NHjnVIfWZfj7fH401aa7yB3pLFBKG6M1EfbR0qCaBSIm5pn7VOHKpljJwjOx279ZbWwNkUax1Tid-93kBf5kt1g8OIpVWhfSzSRAUrIZFEAnIXKBb1B_Shw9LExuxLnrxP8mwPbbGY9P4en8ckJrYUYcuqexxONoLvSLz0ckXH4YQC7uNA7TZf19SXsZDsGRzdYaNTL5RJjLb3VrC8mhpK3XxdnCTfkY5Ir_u-Q03NY';
-const HYGRAPH_URL = 'https://api-eu-west-2.hygraph.com/v2/cltbwvhuc31gr07utb5ygml7w/master';
- 
-import { GraphQLClient } from 'graphql-request';
- 
+import { HYGRAPH_KEY, HYGRAPH_URL } from '$env/static/private'
+
+import { GraphQLClient } from 'graphql-request'
+
 console.log(HYGRAPH_URL);
  
 export const hygraph = new GraphQLClient(HYGRAPH_URL, {
     headers: {
-        Authorization: `Bearer ${HYGRAPH_KEY}`
-    }
-});
+        Authorization: `Bearer ${HYGRAPH_KEY}`,
+    },
+})
