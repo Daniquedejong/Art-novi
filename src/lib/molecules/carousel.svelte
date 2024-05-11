@@ -1,18 +1,21 @@
 <script>
 </script>
 
+<p>{page.title}</p>
+
 <body>
 	<h1 class="h1-2018">2018</h1>
-	<img class="img1" src="src/assets/Drawings1.jpg" alt="drawing1" />
-	<img class="img2" src="src/assets/Drawings2.jpg" alt="drawing2" />
-	<img class="img3" src="src/assets/Drawings3.jpg" alt="drawing3" />
-	<img class="img4" src="src/assets/Drawings4.jpg" alt="drawing4" />
+	<img class="img1" src="/assets/Drawings1.jpg" alt="drawing1" />
+	<img class="img2" src="/assets/Drawings2.jpg" alt="drawing2" />
+	<img class="img3" src="/assets/Drawings3.jpg" alt="drawing3" />
+	<img class="img4" src="/assets/Drawings4.jpg" alt="drawing4" />
 
 	<h1 class="h1-2019">2019</h1>
-	<img class="img5" src="src/assets/Drawings5.jpg" alt="drawing5" />
-	<img class="img6" src="src/assets/Drawings6.jpg" alt="drawing6" />
-	<img class="img7" src="src/assets/Drawings7.jpg" alt="drawing7" />
-	<img class="img8" src="src/assets/Drawings8.jpg" alt="drawing8" />
+	<img class="img5" src="/assets/Drawings5.jpg" alt="drawing5" />
+	<img class="img6" src="/assets/Drawings6.jpg" alt="drawing6" />
+	<img class="img7" src="/assets/Drawings7.jpg" alt="drawing7" />
+	<img class="img8" src="/assets/Drawings8.jpg" alt="drawing8" />
+    
 </body>
 
 <style>

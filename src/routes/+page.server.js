@@ -1,21 +1,15 @@
 import { gql } from 'graphql-request';
 import { hygraph } from '$lib/utils/hygraph.js';
- 
-export async function load({url}) {
-  let selectedCategoryId = url.searchParams.get('selectedCategoryId') || null;
-    let where = ''
-    if(selectedCategoryId !== null){
-        where = `, where: {categories_some: {id: "${selectedCategoryId}"}}`
-    }
 
-    let query = gql`
-    query Novi {
-        abouts {
-          aboutInfo
-        }
-      }
-    `;
- 
-    
+export async function load() {
+	let query = gql`
+		query Pages {
+			page(where: { id: "clve9wa0l0sit07lax4rfve8s" }) {
+				title
+			}
+		}
+	`;
+
+	const data = await hygraph.request(query);
+	return data;
 }
-

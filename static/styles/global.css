@@ -1,0 +1,17 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+    /* Colors Novi Art */
+    --Novi-Darkgrey: #292524;
+	--Novi-Lightgrey: rgb(110, 110, 110);
+    --Novi-White: #edede6;
+
+     /* Fonts Novi Art */
+    --Novi-Mainfont: "Yeseva One", serif 400 normal;
+}
+
+body {
+	background-color: var(--Novi-Darkgrey);
+}

@@ -7,6 +7,6 @@
 
 <Header />
 
-Installations
+About
 
 <Footer />

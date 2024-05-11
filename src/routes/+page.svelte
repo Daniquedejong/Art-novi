@@ -1,9 +1,7 @@
 <script>
-	import Header from '../lib/components/Header.svelte';
-	import Home from '../lib/components/Home.svelte';
-    import Footer from '../lib/components/Footer.svelte';
+	import Article from "../lib/molecules/article.svelte";
 </script>
 
-<Header />
-<Home />
-<Footer />
+
+
+<Article />

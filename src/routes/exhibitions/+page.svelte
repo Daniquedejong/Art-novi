@@ -7,6 +7,6 @@
 
 <Header />
 
-Installations
+Exhibitions
 
 <Footer />

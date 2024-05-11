@@ -1,11 +1,12 @@
 <script>
-	import Header from "../components/+header.svelte";
-    import Contact from "../../components/+contact.svelte";
-    import Footer from "../../components/+footer.svelte";
+    import Header from "../../lib/organisms/Header.svelte";
+    import Footer from "../../lib/organisms/footer.svelte";
+
+    // export let data;
 </script>
 
 <Header />
-<Contact />
-<Footer />
 
-contact
+Contact
+
+<Footer />

@@ -1,10 +1,16 @@
 <script>
-	import Header from "../../lib/components/Header.svelte";
-    import Drawings from "../../lib/components/Drawings.svelte";
-    import Footer from "../../lib/components/Footer.svelte";
+    import Header from "../../lib/organisms/Header.svelte";
+    import Carousel from "../../lib/molecules/carousel.svelte";
+    import Footer from "../../lib/organisms/footer.svelte";
+
+    export let data;
+
+    // const {page} = data
 </script>
 
 <Header />
-<Drawings />
-<Footer />
 
+<Carousel />
+drawings
+
+<Footer />
