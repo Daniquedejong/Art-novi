@@ -1,6 +1,5 @@
 <script>
-    import Header from "../lib/organisms/header.svelte";
-    import Footer from "../lib/organisms/footer.svelte";
+    import { Header, Footer } from '$lib/index.js';
 </script>
 
 <Header />

@@ -1,7 +1,9 @@
 <script>
-	import Logo from '../atoms/logo.svelte';
+	// import Logo from '../atoms/logo.svelte';
+    import { Logo } from '$lib/index.js';
 
-	// export let data;
+
+	// export let title;
 
 	function toggleMenu(event) {
 		// Dit is leeg, aangezien we alleen de stijlen veranderen op basis van de checkbox-status
@@ -53,6 +55,7 @@
 
 	li {
 		color: var(--Novi-White);
+		font-family: var(--Novi-Secondfont);
 		list-style: none;
 	}
 
@@ -75,6 +78,7 @@
     .ul-main li:hover {
         color: var(--Novi-Lightgrey);
         transform: scale(1.2);
+		transition-duration: 0.2s;
     }
 
 	.nav-main {

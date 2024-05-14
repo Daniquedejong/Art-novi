@@ -5,11 +5,15 @@
 :root {
     /* Colors Novi Art */
     --Novi-Darkgrey: #292524;
+    --Novi-Mediumgrey: #414141;
 	--Novi-Lightgrey: rgb(110, 110, 110);
+    --Novi-Beigegrey: rgb(134, 124, 111);
     --Novi-White: #edede6;
 
      /* Fonts Novi Art */
-    --Novi-Mainfont: "Yeseva One", serif 400 normal;
+    --Novi-Mainfont: "Cinzel", serif;
+    --Novi-Secondfont: "Bree serif", helvetica;
+    --Novi-Thirdfont: "Roboto", helvetica;
 }
 
 body {
