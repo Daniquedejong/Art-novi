@@ -15,10 +15,10 @@
 	<nav class="nav-main">
 		<ul class="ul-main">
 			<!-- Moet nog dynamisch -->
-			<li><a href="src/routes/drawings/+page.svelte">Drawings</a></li>
-			<li><a href="src/routes/video's/+page.svelte">Video's</a></li>
-			<li><a href="src/routes/exhibitions/+page.svelte">Exhibitions</a></li>
-			<li><a href="src/routes/installations/+page.svelte">Installations</a></li>
+			<li><a href="/drawings">Drawings</a></li>
+			<li><a href="/video's">Video's</a></li>
+			<li><a href="/exhibitions">Exhibitions</a></li>
+			<li><a href="/installations">Installations</a></li>
 		</ul>
 	</nav>
 
@@ -29,11 +29,11 @@
 			<span class="nav-button-part"></span>
 			<span class="nav-button-part"></span>
 		</label>
-		<nav class="nav-items-container" role="navigation">
+		<nav class="nav-items-container">
 			<ul class="nav-list">
 				<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-				<li class="nav-item"><a class="nav-link" href="src\routes\about\+page.svelte">About</a></li>
-				<li class="nav-item"><a class="nav-link" href="src\routes\contact\+page.svelte">Contact</a>
+				<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+				<li class="nav-item"><a class="nav-link" href="/contact">Contact</a>
 				</li>
 			</ul>
 		</nav>

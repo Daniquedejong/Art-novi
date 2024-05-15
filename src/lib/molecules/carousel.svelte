@@ -1,10 +1,16 @@
 <script>
+	// -------------Export hygraph data--------------
+	export let drawingsTitle;
+	
+	
+	// ---------------Imports----------------
 	// Importeer de onMount functie uit Svelte
 	import { onMount } from 'svelte';
 
 	// Importeer de gsap animatiebibliotheek en de ScrollTrigger plugin
 	import { gsap } from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+
 
 	// -------------Carousel animatie--------------
 	// Registreer de ScrollTrigger plugin bij GSAP
@@ -122,7 +128,8 @@
 				</ul>
 			</div>
 
-			<h1><span class="title">Drawings</span></h1>
+			<h1><span class="title">{drawingsTitle}</span></h1>
+
 
 			<img
 				src="/assets/Drawing15-removebg-preview.png"

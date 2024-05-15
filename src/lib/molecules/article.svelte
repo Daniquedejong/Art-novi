@@ -1,11 +1,16 @@
 <script>
     
-	export let data;
+	
+
+	// export let data;
 
 	// const {title} = data;
 </script>
 
 <article>
+
+	<!-- <p>{page.title}</p> -->
+
 	<img class="novi-pic" src="/assets/Novi.jpg" alt="novi-pic" />
 
 	<h2>
@@ -21,7 +26,7 @@
 		i make a trolley out of wood and play with it,<br /><br />
 		and work with a large plastic that i can fly with.
 	</h2>
-	<!-- <p>{page.title}</p> -->
+	
 
 </article>
 

@@ -1,14 +1,10 @@
 <script>
+	import { Carousel } from '$lib/index.js';
 
-    import { Header, Carousel, Footer } from '$lib/index.js';
+	export let data;
 
-    export let data;
-
+	console.log(data);
 </script>
 
-<Header />
+<Carousel drawingsTitle={data.page.title} />
 
-<Carousel />
-drawings
-
-<Footer />
