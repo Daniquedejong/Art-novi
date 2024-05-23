@@ -1,5 +1,5 @@
 <script>
-    import { Header, Footer } from '$lib/index.js';
+    import { Header } from '$lib/index.js';
 </script>
 
 <Header />
@@ -8,7 +8,6 @@
     <slot />
 </main>
 
-<Footer />
 
 
 

@@ -1,7 +1,11 @@
 <script>
-    // export let data;
+	import { Installations, Footer } from '$lib/index.js';
+
+	export let data;
+
 </script>
 
+<Installations {data}/>
 
-Installations
+<Footer />
 

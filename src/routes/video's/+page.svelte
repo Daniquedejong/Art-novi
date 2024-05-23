@@ -1,7 +1,9 @@
 <script>
+    // import { videoCarousel } from '$lib.index.js';
 
-    // export let data;
+	export let data;
+
+	console.log(data);
 </script>
 
-videos
-
+<!-- <videoCarousel videosTitle={data.page.title}/> -->

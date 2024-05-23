@@ -1,8 +1,17 @@
 <script>
+	import Contactform from '../../lib/molecules/contactform.svelte';
 
-    // export let data;
+	export let data;
+
+	console.log(data);
 </script>
 
+<section>
+<Contactform />
+</section>
 
-Contact
-
+<style>
+    section {
+        margin-top: 4em;
+    }
+</style>
