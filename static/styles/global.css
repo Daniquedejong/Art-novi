@@ -1,5 +1,7 @@
 * {
 	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -7,6 +9,7 @@
     --Novi-Darkgrey: #292524;
     --Novi-Mediumgrey: #414141;
 	--Novi-Lightgrey: rgb(110, 110, 110);
+    --Novi-Lightlightgrey: rgb(212, 212, 212);
     --Novi-Beigegrey: rgb(134, 124, 111);
     --Novi-White: #edede6;
 
@@ -16,6 +19,12 @@
     --Novi-Thirdfont: "Roboto", helvetica;
 }
 
-body {
+html, body {
 	background-color: var(--Novi-Darkgrey);
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    overflow-x: hidden;
 }
