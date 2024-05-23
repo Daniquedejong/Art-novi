@@ -46,6 +46,8 @@
 	header {
 		margin: 0;
 		padding: 0;
+		width: 100vw;
+		height: auto;
 	}
 
 	.ul-main {
@@ -84,8 +86,8 @@
 	.nav-main {
 		justify-content: center;
 		display: flex;
-		margin-top: -3.5em;
-		padding-bottom: 3.5em;
+		margin-top: -3em;
+		padding-bottom: 3em;
 	}
 
 	.nav {
@@ -222,7 +224,7 @@
 	.nav-underline {
 		background-color: var(--Novi-Lightgrey);
 		margin: 0 -0.5rem;
-		margin-top: -2em;
+		margin-top: -1em;
 		padding-bottom: 0.05rem;
 		width: 100vw;
 		display: flex;
