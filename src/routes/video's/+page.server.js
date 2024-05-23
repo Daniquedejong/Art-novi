@@ -4,27 +4,15 @@ import { hygraph } from '$lib/utils/hygraph.js';
 export async function load() {
 	let query = gql`
 		query Pages {
-			page(where: { id: "clve9wa0l0sit07lax4rfve8s" }) {
-				title
-				artImage(first: 100){
+			page(where: { id: "clw99lps72zfs07l66k8946pn" }) {
+				artImage {
 					url
 				}
-				artText {
-					text
-				}
-				artTitle
+				title
 			}
 		}
 	`;
 
-
-
 	const data = await hygraph.request(query);
-
 	return data;
 }
-
-
-
-
-
