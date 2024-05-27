@@ -1,38 +1,69 @@
-# create-svelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+# Novi Otten art
 
-## Creating a project
+<img src='https://github.com/Daniquedejong/Art-novi/assets/112856683/a1239a90-6a15-454d-b04f-6d28bef5eeb3' width=50%>
 
-If you're seeing this, you've probably already done this step. Congrats!
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## 📚 Inhoudsopgave
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+* [Beschrijving](#beschrijving)
+* [Kenmerken](#kenmerken)
+* [Bronnen](#bronnen)
+* [Licentie](#licentie)
 
-## Developing
+## 🗒️ Beschrijving
+<strong>Novi Otten art 🖌️:</strong>
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+<p>Ik heb een portfolio van Novi's kunst gemaakt. Nu heeft ze overal waar ze is een online visitekaartje!</p>
+  
+## 💻👨🏻‍💻👨🏼‍💻 Gebruik
 
-```bash
-npm run dev
+Deze website kan Novi zelf gebruiken om haar kunst op te weergeven. Gebruikers kunnen contact met Novi opnemen over de kunstwerken die hen interesseerden. 
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## 👩🏼‍💻👩🏾‍💻👨🏻‍💻👨🏼‍💻 Kenmerken
 
-## Building
+Lijst met gebruikte tools, technieken en communicatie middelen.
+Dit project is gemaakt met hygraph en sveltekit.
 
-To create a production version of your app:
+Sveltekit: Dit is een framework. SvelteKit biedt extra mogelijkheden bovenop Svelte, zoals routing, statische site generation (SSG) en server-side rendering (SSR).
 
-```bash
-npm run build
-```
+Hygraph: Dit is een headless cms en een content model creator in een. 
 
-You can preview the production build with `npm run preview`.
+<ul>
+<li><strong>TOOLS 🧰:</strong></li>
+<li>VSCode</li>
+<li>Pen & Papier</li>
+<li>Laptop</li>
+</ul>
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+<ul>
+<li><strong>GEBRUIKTE TECHNIEKEN 🛠️:</strong></li>
+<li>HTML</li>
+<li>CSS</li>
+<li>Javascript</li>
+</ul>
+
+<ul>
+<li><strong>COMMUNICATIE MIDDELEN 🗣️:</strong></li>
+<li>Microsoft Teams</li>
+ <li>Whatsapp</li>
+</ul>
+
+
+## 🌐 Bronnen
+
+<ul>
+
+<li>https://github.com//</li>
+
+<li>https://www.google.nl/</li>
+
+</ul>
+
+
+
+## 🔒 Licentie
+
+![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
+
+This work is licensed under [GNU GPLv3](./LICENSE).
