@@ -16,6 +16,10 @@
 
 	// Gebruik de onMount functie om code uit te voeren wanneer de component is geladen
 	onMount(() => {
+
+		// Hierdoor wordt de container standaard verborgen door CSS (gaat weer aan met JS)
+		document.querySelector('.container').style.display = 'flex';
+
 		// Functie om de GSAP animatie aan te maken
 		function createGsapAnimation() {
 			// Selecteer alle elementen met de klasse 'panel' en zet ze om in een array
@@ -47,6 +51,10 @@
 		createGsapAnimation();
 
 		// -------------Filteren--------------
+
+		// Hierdoor wordt de container standaard verborgen door CSS (gaat weer aan met JS)
+		document.querySelector('.main-filter-container').style.display = 'flex';
+
 		// Selecteer alle categorie titels en alle posts
 		const categoryTitle = document.querySelectorAll('.category-title');
 		const allCategoryPosts = document.querySelectorAll('.all');
@@ -84,7 +92,7 @@
 			document.querySelector('.container').scrollLeft = 0;
 
 			// Herinitialiseer de GSAP animatie
-			ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+			ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
 			createGsapAnimation();
 		}
 
@@ -126,31 +134,29 @@
 				<!-- Categorie: Happiness -->
 				<div class="category-title" id="happiness">
 					<li>Happiness</li>
-					<span><i  aria-hidden="true"></i></span>
+					<span><i aria-hidden="true"></i></span>
 				</div>
 				<!-- Categorie: Confusion -->
 				<div class="category-title" id="confusion">
 					<li>Confusion</li>
-					<span><i  aria-hidden="true"></i></span>
+					<span><i aria-hidden="true"></i></span>
 				</div>
 				<!-- Categorie: Frustration -->
 				<div class="category-title" id="frustration">
 					<li>Frustration</li>
-					<span><i  aria-hidden="true"></i></span>
+					<span><i aria-hidden="true"></i></span>
 				</div>
 				<!-- Categorie: Sadness -->
 				<div class="category-title" id="sadness">
 					<li>Sadness</li>
-					<span><i  aria-hidden="true"></i></span>
+					<span><i aria-hidden="true"></i></span>
 				</div>
 			</ul>
 		</div>
 
 		<div class="container">
-			<!-- Titel van de pagina -->
 			<h1><span class="title">{data.page.title}</span></h1>
 
-			<!-- Voorbeeld afbeelding -->
 			<img
 				src="/assets/Drawing15-removebg-preview.png"
 				alt="drawing-example"
@@ -158,12 +164,19 @@
 				width="700"
 				height="600"
 			/>
-			
+
 			<!-- Sectie voor afbeeldingen uit frustration -->
 			{#each data.page.artImage.slice(0, 4) as image, i}
 				<section class="panel">
 					<div class="all frustration">
-						<img src={image.url} loading="lazy" alt="Artwork related to frustration" width="350" height="500" />
+						<img
+							src={image.url}
+							loading="lazy"
+							decoding="async"
+							alt="Artwork related to frustration"
+							width="350"
+							height="500"
+						/>
 						<h2>{data.page.artTitle[i]}</h2>
 						<p>{data.page.artText[i].text}</p>
 					</div>
@@ -174,7 +187,14 @@
 			{#each data.page.artImage.slice(4, 10) as image, i}
 				<section class="panel">
 					<div class="all sadness">
-						<img src={image.url} loading="lazy" alt="Artwork related to sadness" width="350" height="500" />
+						<img
+							src={image.url}
+							loading="lazy"
+							decoding="async"
+							alt="Artwork related to sadness"
+							width="350"
+							height="500"
+						/>
 						<h2>{data.page.artTitle[i + 10]}</h2>
 						<p>{data.page.artText[i + 10].text}</p>
 					</div>
@@ -185,7 +205,14 @@
 			{#each data.page.artImage.slice(10, 15) as image, i}
 				<section class="panel">
 					<div class="all confusion">
-						<img src={image.url} loading="lazy" alt="Artwork related to confusion" width="350" height="500" />
+						<img
+							src={image.url}
+							loading="lazy"
+							decoding="async"
+							alt="Artwork related to confusion"
+							width="350"
+							height="500"
+						/>
 						<h2>{data.page.artTitle[i + 10]}</h2>
 						<p>{data.page.artText[i + 10].text}</p>
 					</div>
@@ -196,18 +223,50 @@
 			{#each data.page.artImage.slice(15, 21) as image, i}
 				<section class="panel">
 					<div class="all happiness">
-						<img src={image.url} loading="lazy" alt="Artwork related to happiness" width="350" height="500" />
+						<img
+							src={image.url}
+							loading="lazy"
+							decoding="async"
+							alt="Artwork related to happiness"
+							width="350"
+							height="500"
+						/>
 						<h2>{data.page.artTitle[i + 10]}</h2>
 						<p>{data.page.artText[i + 10].text}</p>
 					</div>
 				</section>
 			{/each}
 		</div>
+
+		<noscript>
+			<!-- Sectie voor afbeeldingen uit happiness -->
+			{#each data.page.artImage.slice(0, 21) as image, i}
+				<section class="panel">
+					<div class="all happiness">
+						<img
+							src={image.url}
+							loading="lazy"
+							decoding="async"
+							alt="Artwork related to happiness"
+							width="350"
+							height="500"
+						/>
+						<h2>{data.page.artTitle[i]}</h2>
+						<p>{data.page.artText[i].text}</p>
+					</div>
+				</section>
+			{/each}
+		</noscript>
 	</section>
 </body>
 
 <style>
-	/* Basis stijlen voor body en section */
+	noscript {
+		display: grid;
+		gap: 1em;
+		grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+	}
+
 	body {
 		overflow: hidden;
 		overflow-y: scroll;
@@ -222,20 +281,18 @@
 		overflow-x: hidden;
 	}
 
-	/* Stijl voor de voorbeeldtekening */
 	.drawing-example {
 		margin-top: 5em;
 		margin-left: -60em;
 	}
 
-	/* Stijl voor de filtercontainer */
 	.main-filter-container {
 		display: flex;
 		justify-content: center;
 		height: fit-content;
+		display: none;
 	}
 
-	/* Stijl voor de lijst van categorieën */
 	ul {
 		display: flex;
 		justify-content: center;
@@ -243,7 +300,6 @@
 		margin-top: 1em;
 	}
 
-	/* Stijl voor elk lijstitem */
 	li {
 		margin: 1em;
 		background-color: var(--Novi-Mediumgrey);
@@ -253,41 +309,38 @@
 		border-radius: 0.2em;
 	}
 
-	/* Stijl voor hover effect op de lijstitems */
 	li:hover {
 		color: var(--Novi-White);
 	}
 
-	/* Stijl voor de container met de panelen */
 	.container {
 		width: 400%;
 		height: 100vh;
 		display: flex;
 		flex-wrap: nowrap;
+		display: none;
 	}
 
-	/* Verberg de scrollbar */
 	::-webkit-scrollbar {
 		display: none;
 	}
 
-	/* Stijl voor de panelen */
 	.panel {
 		margin-top: 5em;
 		padding: 2em 0em 0em 0.5em;
 		background-color: var(--Novi-Darkgrey);
-		flex-shrink: 0; /* Zorg ervoor dat de panelen niet krimpen */
+		flex-shrink: 0;
 		box-sizing: border-box;
 	}
 
-	/* Stijl voor de titel */
 	.title {
 		position: absolute;
 		margin-left: -0.5em;
 	}
 
-	/* Stijlen voor de teksten */
-	h1, h2, p {
+	h1,
+	h2,
+	p {
 		color: var(--Novi-White);
 	}
 

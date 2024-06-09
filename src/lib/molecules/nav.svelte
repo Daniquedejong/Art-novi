@@ -1,13 +1,11 @@
 <script>
-	// import Logo from '../atoms/logo.svelte';
     import { Logo } from '$lib/index.js';
 
-
-	// export let title;
 
 	function toggleMenu(event) {
 		// Dit is leeg, aangezien we alleen de stijlen veranderen op basis van de checkbox-status
 	}
+	
 </script>
 
 <header>
