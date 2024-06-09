@@ -49,7 +49,22 @@ Hygraph: Dit is een headless cms en een content model creator in een.
  <li>Whatsapp</li>
 </ul>
 
+## Installatie
+Volg deze stappen om het project lokaal te installeren:
 
+1. Clone het project van de GitHub repository:
+
+2. Installeer de benodigde afhankelijkheden:
+```
+npm install
+npm @graphql-request graphql
+```
+3. Maak een .env bestand aan en vul het in zoals de example.env
+
+4. Start de ontwikkelingsserver:
+```
+npm run dev
+```
 ## 🌐 Bronnen
 
 <ul>
