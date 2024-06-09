@@ -112,9 +112,6 @@
 
     @media  (min-width: 850px) {
 
-        article{
-            width: fit-content;
-        }
 
     }
 </style>

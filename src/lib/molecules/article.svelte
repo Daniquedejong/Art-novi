@@ -1,15 +1,9 @@
 <script>
     
 
-
-	// export let data;
-
-	// const {title} = data;
 </script>
 
 <article>
-
-	<!-- <p>{page.title}</p> -->
 
 	<img class="novi-pic" src="/assets/Novi.jpg" alt="novi-pic" />
 
@@ -32,7 +26,6 @@
 
 <style>
 	article {
-		/* display: grid; */
 		padding: 0.8em;
 		margin: 0;
 		grid-template-areas:
