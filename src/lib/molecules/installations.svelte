@@ -51,10 +51,9 @@
 	}
 
 	.grid {
-		display: flex;
-		flex-direction: column;
-		position: relative;
-		gap: 2em; /* Add some gap between panels */
+		display: grid;
+		gap: 1em;
+		grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
 	}
 
 	.panel {
@@ -63,7 +62,7 @@
 	}
 
 	.panel img {
-		width: 40%;
+		width: 60%;
 		height: auto;
 		border-radius: 1em 1em 0em 0em;
 	}
