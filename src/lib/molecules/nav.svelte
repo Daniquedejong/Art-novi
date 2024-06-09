@@ -14,7 +14,7 @@
 		<ul class="ul-main">
 			<!-- Moet nog dynamisch -->
 			<li><a href="/drawings">Drawings</a></li>
-			<li><a href="/video's">Video's</a></li>
+			<li><a href="/videos">Video's</a></li>
 			<li><a href="/exhibitions">Exhibitions</a></li>
 			<li><a href="/installations">Installations</a></li>
 		</ul>
