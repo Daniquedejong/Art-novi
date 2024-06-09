@@ -1,9 +1,9 @@
 <script>
+	import { Abouttext } from '$lib/index.js';
 
+	export let data;
 
 </script>
 
-
-
-About
+<Abouttext {data}/>
 
