@@ -1,9 +1,4 @@
-<script>
-	import { Abouttext } from '$lib/index.js';
-
-	export let data;
-
-</script>
-
-<Abouttext {data}/>
-
+<details>
+	<summary>School</summary>
+	<p>In 2018 I graduated from the Rietveld academy.</p>
+</details>
