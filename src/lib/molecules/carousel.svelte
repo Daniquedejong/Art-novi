@@ -304,13 +304,14 @@
 		margin: 1em;
 		background-color: var(--Novi-Mediumgrey);
 		font-family: var(--Novi-Secondfont);
+		color: var(--Novi-White);
 		list-style: none;
 		padding: 0.2em 1em;
 		border-radius: 0.2em;
 	}
 
 	li:hover {
-		color: var(--Novi-White);
+		background-color: var(--Novi-Lightgrey);
 	}
 
 	.container {
